@@ -1,7 +1,7 @@
 // Function to create plots
 function plots(subjectId){ 
     // Read json data
-    d3.json("../../data/samples.json").then(data => {
+    d3.json("../../samples.json").then(data => {
         
         // Filter data according to id
         var filteredData = data.samples.filter(d => d.id == subjectId)
@@ -72,7 +72,7 @@ function plots(subjectId){
 // Function to get demographic information table
 function demographicInfo(subjectId) {
     // Read the json file to get data
-        d3.json("../../data/samples.json").then((data)=> {
+        d3.json("../../samples.json").then((data)=> {
 
             // Metadata info for the demographic info
             var metadata = data.metadata;
@@ -97,7 +97,7 @@ function demographicInfo(subjectId) {
 // Function to initialise page plots
 function init() {
     // Read json data
-    d3.json("../../data/samples.json").then((data) => {
+    d3.json("../../samples.json").then((data) => {
         
         // Select drop down menu
         var dropDownMenu = d3.select("#selDataset");
