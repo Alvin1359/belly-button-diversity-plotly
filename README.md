@@ -1,26 +1,21 @@
 # **Plot**.**ly** - Belly Button Biodiversity
 Build an interactive dashboard to explore the Belly Button Biodiversity dataset, which catalogs the microbes that colonize human navels.  
-The dataset reveals that a small handful of microbial species (also called operational taxonomic units, or OTUs, in the study) were present in more than 70% of people, while the rest were relatively rare.
-
+The dataset reveals that a small handful of microbial species (also called operational taxonomic units, or OTUs, in the study) were present in more than 70% of people, while the rest were relatively rare.  
+Dashboard Link: https://alvin1359.github.io/belly-button-diversity-plotly/
 ## Project structure
 ```
 project  
-|__ Images/                                 # contains output graphs from jupyter notebook  
+|__ images/                                 # contains images of graphs constructed
 |
-|__ Resources/                              # contains raw and cleaned data  
+|__ static/                              
+|         |_ css/                           # contains css styling sheets
+|         |_ js/                            # contains js logic files
 |
+|__ README.md                               # readme file      
 |
-|__ .gitignore                              # gitignore file      
+|__ index.html                              # html file to render page
 |
-|__ Data_Cleanup_and_Exploration.ipynb      # contains data collection, cleanup and exploration
-|
-|__ Final_data_analysis.ipynb               # contains final analysis used in presentation
-|
-|__ WHA_Country.ipynb                       # contains analysis by country
-|
-|__ WHA_Region.ipynb                        # contains analysis by region
-|  
-|__World Happiness Report Presention.pptx   # project presentation  
+|__ samples.json                            # JSON file containing dataset
 ```
 
 
